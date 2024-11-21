@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_marginTop="20sp"
+    android:id="@+id/main"
+    android:layout_height="match_parent">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <!-- Toolbar -->
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/topAppBar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="#0000BF"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar"
+            android:elevation="4dp" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="0sp"
+                >
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="0sp"
+                    android:layout_gravity="bottom"
+                    android:layout_margin="0sp"
+                    android:background="#0000BF"
+                    android:text="Loan Application"
+                    android:gravity="center_vertical"
+                    android:textAlignment="center"
+                    android:textColor="#ffffff"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+
+                    />
+
+            </LinearLayout>
+
+        </androidx.appcompat.widget.Toolbar>
+
+        <!-- Main Content -->
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="400sp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="46dp"
+            android:layout_marginEnd="0dp"
+            android:clipToOutline="true"
+            android:scaleType="fitXY"
+            android:src="@drawable/loanpic" />
+
+        <Button
+            android:id="@+id/button"
+            android:layout_width="300sp"
+            android:layout_height="50sp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="57dp"
+            android:layout_marginTop="477dp"
+            android:layout_marginEnd="61dp"
+            android:onClick="launchLogIn"
+            android:background="@drawable/buttons_round"
+            android:text="Sign In"
+            android:textColor="#ffffff"
+            tools:ignore="SpeakableTextPresentCheck" />
+
+        <Button
+            android:id="@+id/button2"
+            android:layout_width="300sp"
+            android:layout_height="50sp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="57dp"
+            android:layout_marginTop="544dp"
+            android:layout_marginEnd="61dp"
+            android:onClick="launchRegister"
+            android:background="@drawable/buttons_round"
+            android:text="Sign Up"
+            android:textColor="#ffffff"
+            tools:ignore="SpeakableTextPresentCheck" />
+
+
+    </RelativeLayout>
+
+
+
+
+
+</LinearLayout>

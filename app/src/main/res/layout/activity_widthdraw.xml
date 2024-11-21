@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:id="@+id/main"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    >
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/topAppBar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="?attr/colorPrimary"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+        android:gravity="right"
+        android:elevation="4dp">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="0sp"
+        android:layout_gravity="bottom"
+        android:layout_margin="0sp"
+        android:background="#0000BF"
+        android:text="Loan Application"
+        android:gravity="center_vertical"
+        android:textAlignment="center"
+        android:textColor="#ffffff"
+        android:textSize="20sp"
+        android:textStyle="bold"/>
+
+    </androidx.appcompat.widget.Toolbar>
+
+    <!-- Text field for "Loan Limit" label -->
+    <TextView
+        android:id="@+id/tvLoanLimitLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Account Balance"
+        android:textSize="20sp"
+        android:textColor="#0000bf"
+        android:layout_marginLeft="20sp"
+        android:textStyle="bold"
+        android:paddingBottom="8dp" />
+
+    <!-- Text field to display the actual loan limit amount -->
+    <TextView
+        android:id="@+id/accBalancetxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="20sp"
+        android:paddingBottom="16dp"
+        android:text="4000"
+        android:textColor="@android:color/holo_blue_dark"
+        android:textSize="18sp" />
+
+    <!-- Edit text for entering the amount to apply for -->
+    <EditText
+        android:id="@+id/etwAmount"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:hint="Enter amount to Withdraw"
+        android:inputType="numberDecimal"
+        android:padding="8dp"
+        android:layout_margin="20sp"
+        android:textColor="#000000"
+        tools:ignore="TouchTargetSizeCheck" />
+
+    <!-- Apply button -->
+    <Button
+        android:id="@+id/btnwithdraw"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="20sp"
+        android:text="Withdraw"/>
+
+</LinearLayout>

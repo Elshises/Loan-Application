@@ -1,0 +1,126 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/main"
+    android:orientation="vertical"
+
+    >
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/topAppBar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="#0000bf"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+        android:gravity="right"
+        android:elevation="4dp">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="0sp"
+        android:layout_gravity="bottom"
+        android:layout_margin="0sp"
+        android:background="#0000BF"
+        android:text="Loan Application"
+        android:gravity="center_vertical"
+        android:textAlignment="center"
+        android:textColor="#ffffff"
+        android:textSize="20sp"
+        android:textStyle="bold"/>
+
+    <!-- ID Number -->
+    </androidx.appcompat.widget.Toolbar>
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingBottom="4dp"
+        android:layout_marginBottom="100sp"
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:text="User Authentication"
+        android:textColor="#0000bf"
+        android:textStyle="bold"
+        android:textSize="25sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:paddingTop="20sp"
+        android:layout_height="wrap_content"
+        android:paddingBottom="20sp"
+        android:background="@drawable/forms_style"
+        android:layout_margin="16sp"
+        android:paddingRight="20sp"
+        android:orientation="vertical">
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingBottom="4dp"
+        android:gravity="center"
+        android:layout_marginLeft="38sp"
+        android:layout_gravity="left"
+        android:text="Email Address"
+        android:textColor="#0000bf"
+        android:textSize="16sp" />
+
+    <EditText
+        android:id="@+id/etIdNumber"
+        android:layout_width="250sp"
+        android:layout_height="50sp"
+        android:hint="Enter Email"
+        android:layout_marginLeft="38sp"
+        android:padding="5sp"
+        android:inputType="textEmailAddress"
+        android:background="@drawable/edit_style"
+        android:layout_marginBottom="16dp" />
+
+    <!-- Password -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Password"
+        android:layout_marginLeft="38sp"
+        android:gravity="center"
+        android:layout_gravity="left"
+        android:textSize="16sp"
+        android:textColor="#0000bf"
+        android:paddingBottom="4dp" />
+
+    <EditText
+        android:id="@+id/etPassword"
+        android:layout_width="250sp"
+        android:layout_height="50sp"
+        android:hint="Enter Password"
+        android:layout_marginLeft="38sp"
+        android:padding="5sp"
+        android:maxLength="13"
+        android:inputType="textPassword"
+        android:background="@drawable/edit_style"
+        android:layout_marginBottom="24dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/errorView"
+            android:textSize="10sp"
+            android:layout_marginLeft="38sp"
+            android:textColor="#bf0000"
+            android:paddingTop="12dp"
+            android:paddingBottom="4dp" />
+    <!-- Sign In Button -->
+    <Button
+        android:id="@+id/btnSignIn"
+        android:layout_width="250sp"
+        android:layout_height="50sp"
+        android:text="Sign In"
+        android:layout_marginLeft="44sp"
+        android:onClick="login"
+        android:background="@drawable/buttons_round"
+        android:textColor="@android:color/white"
+        android:layout_marginTop="12dp" />
+    </LinearLayout>
+</LinearLayout>

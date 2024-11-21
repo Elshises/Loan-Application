@@ -1,0 +1,34 @@
+<!-- res/menu/top_nav_menu.xml -->
+<menu xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background ="#520380"
+    tools:ignore="ExtraText">
+
+    <!-- Home Icon -->
+
+
+        >
+    <item
+        android:id="@+id/action_home"
+        android:icon="@drawable/ic_home"
+        android:title="Home"
+        app:showAsAction="ifRoom" />
+
+    <!-- Profile Icon -->
+    <item
+        android:id="@+id/action_profile"
+        android:icon="@drawable/ic_profile"
+        android:title="Profile"
+        app:showAsAction="ifRoom" />  <!-- Replace with your profile icon -->
+
+
+    <!-- Settings Icon -->
+    <item
+        android:id="@+id/action_settings"
+        android:icon="@drawable/ic_settings"
+        android:title="Settings"
+        app:showAsAction="ifRoom" />
+
+
+</menu>

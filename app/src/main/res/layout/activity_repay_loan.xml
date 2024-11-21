@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:id="@+id/main"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+
+
+    >
+
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/topAppBar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="#0000bf"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+        android:gravity="right"
+        android:elevation="4dp" >
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="0sp"
+            android:layout_gravity="bottom"
+            android:layout_margin="0sp"
+            android:background="#0000BF"
+            android:text="Loan Application"
+            android:gravity="center_vertical"
+            android:textAlignment="center"
+            android:textColor="#ffffff"
+            android:textSize="20sp"
+            android:textStyle="bold"/>
+
+
+
+
+    </androidx.appcompat.widget.Toolbar>
+
+    <!-- Text field for "Loan Limit" label -->
+    <TextView
+        android:id="@+id/tvLoanLimitLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Loan Balance"
+        android:textSize="20sp"
+        android:layout_marginLeft="20sp"
+        android:textColor="#0000bf"
+        android:textStyle="bold"
+        android:layout_marginTop="20sp" />
+
+    <!-- Text field to display the actual loan limit amount -->
+    <TextView
+        android:id="@+id/loanBalance"
+        android:layout_marginTop="20sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="15000"
+        android:textSize="18sp"
+        android:layout_marginLeft="20sp"
+        android:textColor="@android:color/holo_blue_dark"
+        android:paddingBottom="16dp"
+        />
+
+    <!-- Edit text for entering the amount to apply for -->
+    <EditText
+        android:id="@+id/repayLoanAmounttxt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:hint="Enter amount you want to Repay"
+        android:inputType="numberDecimal"
+        android:layout_marginTop="20sp"
+        android:layout_marginLeft="20sp"
+        android:textColor="#000000"
+        tools:ignore="TouchTargetSizeCheck" />
+
+    <!-- Apply button -->
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="40sp"
+        android:layout_marginLeft="20sp"
+        android:text="Pay Via"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/btnMpesa"
+        android:layout_marginLeft="50sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#ffffff"
+        android:textColor="@color/colorPrimary"
+        android:textSize="23sp"
+        android:text="M-pesa"/>
+    <TextView
+        android:id="@+id/bankButton"
+        android:layout_marginLeft="50sp"
+        android:layout_width="wrap_content"
+        android:background="#ffffff"
+        android:textColor="@color/colorPrimary"
+        android:textSize="23sp"
+        android:layout_height="wrap_content"
+        android:text="Bank"/>
+
+
+</LinearLayout>
+
+
+    <Button
+        android:id="@+id/btnApply"
+        android:layout_marginLeft="50sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Repay"/>
+
+</LinearLayout>

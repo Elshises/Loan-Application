@@ -1,0 +1,245 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/topAppBar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="#0000bf"
+            android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+            android:gravity="right"
+            android:elevation="4dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="0sp"
+            android:layout_gravity="bottom"
+            android:layout_margin="0sp"
+            android:background="#0000BF"
+            android:text="Loan Application"
+            android:gravity="center_vertical"
+            android:textAlignment="center"
+            android:textColor="#ffffff"
+            android:textSize="20sp"
+            android:textStyle="bold"/>
+
+        </androidx.appcompat.widget.Toolbar>
+
+
+
+        <LinearLayout
+
+        android:layout_width="match_parent" android:layout_marginTop="20sp" android:layout_margin="16sp"
+        android:layout_height="wrap_content" android:padding="5sp"
+        android:background="@drawable/forms_style"
+        android:orientation="vertical">
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:gravity="center"
+            android:layout_height="wrap_content"
+            android:text="Registration"
+            android:textSize="25sp"
+            android:textStyle="bold"
+            android:textColor="#0000bf"
+            android:paddingBottom="4dp" />
+
+        <!-- First Name -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="First Name"
+            android:textSize="12sp"
+            android:textColor="#0000bf"
+            android:paddingBottom="4dp" />
+
+        <EditText
+            android:id="@+id/etFirstName"
+            android:layout_width="match_parent"
+            android:layout_height="50sp"
+            android:padding="5sp"
+            android:textSize="16sp"
+            android:background="@drawable/edit_style"
+            android:hint="Enter First Name"
+            android:inputType="textPersonName" />
+
+        <!-- Last Name -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Last Name"
+            android:textSize="12sp"
+            android:paddingTop="12dp"
+            android:textColor="#0000bf"
+            android:paddingBottom="4dp" />
+
+        <EditText
+            android:id="@+id/etLastName"
+            android:layout_width="match_parent"
+            android:layout_height="50sp"
+            android:padding="5sp"
+            android:background="@drawable/edit_style"
+            android:textSize="16sp"
+            android:hint="Enter Last Name"
+            android:inputType="textPersonName" />
+
+        <!-- Email -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Email"
+            android:textSize="12sp"
+            android:paddingTop="12dp"
+            android:textColor="#0000bf"
+            android:paddingBottom="4dp" />
+
+        <EditText
+            android:id="@+id/etEmail"
+            android:layout_width="match_parent"
+            android:layout_height="50sp"
+            android:padding="5sp"
+            android:hint="Enter Email"
+            android:background="@drawable/edit_style"
+            android:textSize="15dp"
+            android:inputType="textEmailAddress" />
+
+        <!-- Date of Birth -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Date of Birth"
+            android:textSize="12sp"
+            android:textColor="#0000bf"
+            android:paddingTop="12dp"
+            android:paddingBottom="4dp" />
+
+        <EditText
+            android:id="@+id/etDateOfBirth"
+            android:layout_width="match_parent"
+            android:layout_height="50sp"
+            android:padding="5sp"
+            android:hint="Select Date of Birth"
+            android:textSize="16sp"
+            android:background="@drawable/edit_style"
+            android:focusable="false"
+            android:inputType="date" />
+
+        <!-- Phone Number -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Phone Number"
+            android:textSize="12sp"
+            android:paddingTop="12dp"
+            android:textColor="#0000bf"
+            android:paddingBottom="4dp" />
+
+        <EditText
+            android:id="@+id/etPhoneNumber"
+            android:layout_width="match_parent"
+            android:layout_height="50sp"
+            android:padding="5sp"
+            android:textSize="16sp"
+            android:maxLength="13"
+            android:hint="Enter Phone Number"
+            android:background="@drawable/edit_style"
+            android:inputType="phone" />
+
+        <!-- ID Number -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="ID Number"
+            android:textSize="12sp"
+            android:textColor="#0000bf"
+            android:paddingTop="12dp"
+            android:paddingBottom="4dp" />
+
+        <EditText
+            android:id="@+id/etIdNumber"
+            android:layout_width="match_parent"
+            android:layout_height="50sp"
+            android:padding="5sp"
+            android:textSize="16sp"
+            android:maxLength="9"
+            android:background="@drawable/edit_style"
+            android:hint="Enter ID Number"
+            android:inputType="number" />
+
+        <!-- Password -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Set Password"
+            android:textSize="12sp"
+            android:paddingTop="12dp"
+            android:textColor="#0000bf"
+            android:paddingBottom="4dp" />
+
+        <EditText
+            android:id="@+id/etPassword"
+            android:layout_width="match_parent"
+            android:layout_height="50sp"
+            android:padding="5sp"
+            android:hint="Enter Password"
+            android:maxLength="13"
+            android:textSize="16sp"
+            android:background="@drawable/edit_style"
+            android:inputType="textPassword" />
+
+        <!-- Confirm Password -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Confirm Password"
+            android:textSize="12sp"
+            android:textColor="#0000bf"
+            android:paddingTop="12dp"
+            android:paddingBottom="4dp" />
+
+        <EditText
+            android:id="@+id/etConfirmPassword"
+            android:layout_width="match_parent"
+            android:layout_height="50sp"
+            android:padding="5sp"
+            android:maxLength="13"
+            android:background="@drawable/edit_style"
+            android:hint="Confirm Password"
+            android:textSize="16sp"
+            android:inputType="textPassword" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/errorView"
+                android:textSize="10sp"
+                android:textColor="#bf0000"
+                android:paddingTop="12dp"
+                android:paddingBottom="4dp" />
+
+            <!-- Register Button -->
+        <Button
+            android:id="@+id/btnRegister"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Register"
+            android:onClick="getFormData"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/buttons_round"
+            android:textColor="@android:color/white" />
+    </LinearLayout>
+
+    </LinearLayout>
+</ScrollView>
